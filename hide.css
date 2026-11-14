@@ -1,0 +1,14 @@
+/* Collapse instead of display:none. X's feed remembers row heights and ignores a row that reports 0,
+   which leaves a blank hole; a 1px row reports a real height, so the feed closes the gap. */
+[data-xpb-hidden] {
+  height: 1px !important;
+  min-height: 0 !important;
+  max-height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+[data-xpb-hidden] * { visibility: hidden !important; }

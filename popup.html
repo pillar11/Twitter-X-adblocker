@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 14px system-ui, sans-serif; width: 270px; margin: 0; padding: 14px; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  label { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .count { font-size: 22px; font-weight: 600; }
+  small { color: #666; display: block; margin-top: 10px; }
+  button { margin-top: 8px; margin-right: 6px; }
+  #msg { margin-top: 8px; color: #060; min-height: 1.2em; }
+</style>
+</head>
+<body>
+  <h1>X Promoted Blocker</h1>
+  <label><input type="checkbox" id="on"> Hide promoted posts</label>
+  <div><span class="count" id="n">0</span> promoted items hidden so far</div>
+  <button id="reset">Reset counter</button>
+  <button id="debug">Copy debug info</button>
+  <div id="msg"></div>
+  <small>Hides anything X marks as an ad. If one slips through, open X, press "Copy debug info" and paste it to whoever is maintaining this.</small>
+  <script src="popup.js"></script>
+</body>
+</html>
