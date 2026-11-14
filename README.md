@@ -1,4 +1,4 @@
-# X Promoted Blocker
+# Twitter-X-adblocker
 
 A small Chrome extension that hides promoted posts (ads) on X (Twitter). It removes posts marked **Ad**, **Promoted**, **Boosted** or **Ad from <website>**, promoted trends, and promoted "who to follow" entries, and it closes the gap they would leave in your feed.
 
